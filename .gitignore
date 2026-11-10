@@ -1,0 +1,25 @@
+# Secrets and local environment configuration
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local dependencies and generated files
+**/venv/
+**/.venv/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+**/dist/
+**/dist-ssr/
+*.local
+*.log
+
+# Personal resume documents
+/backend/resumes/
+
+# Editor and operating-system files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
