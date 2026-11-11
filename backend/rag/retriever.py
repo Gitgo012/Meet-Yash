@@ -56,7 +56,7 @@ def retrieve_resume_context(
                     content,
                     1 - (embedding <=> %s::vector) AS similarity
                 FROM resume_chunks
-                WHERE (%s IS NULL OR profile = %s)
+                WHERE (%s::text IS NULL OR profile = %s)
                 ORDER BY embedding <=> %s::vector
                 LIMIT %s
                 """,
